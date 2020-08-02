@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" href="css/iconfont.css" type="text/css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #di{
+            /*搜索框*/
+            width: 100%;
+            height: 40px;
+            border: solid 1px red;
+            background-color: red;
+            display: flex;
+        }
+        #di .d1{
+            /*菜单*/
+            width: 15%;
+            height: 40px;
+            border: solid 1px blue;
+            text-align: center;
+        }
+        #di .d2{
+            /*中间的搜索框*/
+            width: 70%;
+            border: solid 1px blue;
+            height: 40px;
+        }
+        #di .d3{
+            /*登录*/
+            width: 15%;
+            border: solid 1px blue;
+            height: 40px;
+            font-size: 25px;
+            text-align: center;
+        }
+        #imgs{
+            /*图片框*/
+            width: 96%;
+            height: 100px;
+            position:relative;
+            margin: auto;
+        }
+        #imgs .img{
+            /*图片*/
+            width: 100%;
+            height: 100%;
+            background: 100% 100%;
+            background-image: url("https://miaosha.jd.com/brand.html?brand_id=38593&sku_ids=8501679,8501691,8309088");
+            position: absolute;
+            background-size: 100% 100%;
+        }
+        #dl{
+            /*京东框*/
+            width: 96%;
+            height: 130px;
+            border: solid 1px goldenrod;
+            margin: auto;
+            /*display: flex;*/
+
+        }
+        #dl .dl1{
+            width:100%;
+            height: 50%;
+            border: solid 1px red;
+            display: flex;
+        }
+        #dl .dl1 div{
+            width: 20%;
+            height: 100%;
+
+        }
+        #dl .dl1 .tu1{
+            width:41px ;
+            height: 42px;
+            background-image: url("https://m.360buyimg.com/mobilecms/s120x120_jfs/t1/125678/35/5947/4868/5efbf28cEbf04a25a/e2bcc411170524f0.png.webp");
+            background-size:42.8px 42.8px ;
+            margin: auto;        }
+        #dl .dl1 .tu2{
+            width:78px ;
+            height: 18px;
+
+            text-align: center;
+            margin: auto;
+        }
+        #dl .dl1 .tu3{
+            width:41px ;
+            height: 42px;
+            background-image: url("https://m.360buyimg.com/mobilecms/s120x120_jfs/t1/135931/4/3281/5598/5efbf2c0Edbdc82c7/ed9861b4ddfb9f30.png.webp");
+            background-size:42.8px 42.8px ;
+            margin: auto;        }
+        #dl .dl1 .tu2{
+            width:78px ;
+            height: 18px;
+
+            text-align: center;
+            margin: auto;
+        }
+        #dl .dl1 .tu4{
+            width:41px ;
+            height: 42px;
+            background-image: url("https://m.360buyimg.com/mobilecms/s120x120_jfs/t1/140012/8/1804/3641/5efbf318E38bd5dad/0db99d859ab16ce9.png.webp");
+            background-size:42.8px 42.8px ;
+            margin: auto;        }
+        #dl .dl1 .tu2{
+            width:78px ;
+            height: 18px;
+
+            text-align: center;
+            margin: auto;
+        }
+        #dl .dl1 .tu5{
+            width:41px ;
+            height: 42px;
+            background-image: url("https://m.360buyimg.com/mobilecms/s120x120_jfs/t1/129215/21/5978/3618/5efbf344Ebec23ae8/59712d986b10bb0a.png.webp");
+            background-size:42.8px 42.8px ;
+            margin: auto;        }
+        #dl .dl1 .tu2{
+            width:78px ;
+            height: 18px;
+
+            text-align: center;
+            margin: auto;
+        }
+        #dl .dl1 .tu6{
+            width:41px ;
+            height: 42px;
+            background-image: url("https://m.360buyimg.com/mobilecms/s120x120_jfs/t1/116602/7/11200/3796/5efbf375Ebba41029/f07cc166f368fa05.png.webp");
+            background-size:42.8px 42.8px ;
+            margin: auto;        }
+        #dl .dl1 .tu2{
+            width:78px ;
+            height: 18px;
+
+            text-align: center;
+            margin: auto;
+        }
+        #dl .dl1 .tu7{
+            width:41px ;
+            height: 42px;
+            background-image: url("https://m.360buyimg.com/mobilecms/s120x120_jfs/t1/146390/3/1846/4909/5efbf39aEe5f5f797/300071558a9ab078.png.webp");
+            background-size:42.8px 42.8px ;
+            margin: auto;        }
+        #dl .dl1 .tu2{
+            width:78px ;
+            height: 18px;
+
+            text-align: center;
+            margin: auto;
+        }
+        #dl .dl1 .tu8{
+            width:41px ;
+            height: 42px;
+            background-image: url("https://m.360buyimg.com/mobilecms/s120x120_jfs/t1/143365/25/1824/3716/5efbf3c0E5175e1fb/88f6227257a29f1d.png.webp");
+            background-size:42.8px 42.8px ;
+            margin: auto;        }
+        #dl .dl1 .tu2{
+            width:78px ;
+            height: 18px;
+
+            text-align: center;
+            margin: auto;
+        }
+        #dl .dl1 .tu9{
+            width:41px ;
+            height: 42px;
+            background-image: url("https://m.360buyimg.com/mobilecms/s120x120_jfs/t1/113589/24/11332/4897/5efbf3feE705d87db/e5c12d5e943266b9.png.webp");
+            background-size:42.8px 42.8px ;
+            margin: auto;        }
+        #dl .dl1 .tu2{
+            width:78px ;
+            height: 18px;
+
+            text-align: center;
+            margin: auto;
+        }
+        #dl .dl1 .tu10{
+            width:41px ;
+            height: 42px;
+            background-image: url("https://m.360buyimg.com/mobilecms/s120x120_jfs/t1/131663/33/3380/3674/5efbf50fEf79cf314/af4b57d2383e605d.png.webp");
+            background-size:42.8px 42.8px ;
+            margin: auto;        }
+        #dl .dl1 .tu2{
+            width:78px ;
+            height: 18px;
+
+            text-align: center;
+            margin: auto;
+        }
+        #dl .dl1 .tu11{
+            width:41px ;
+            height: 42px;
+            background-image: url("https://m.360buyimg.com/mobilecms/s120x120_jfs/t1/123730/37/5924/4189/5efbf567E0a226121/d04df7c74c87cf68.png.webp");
+            background-size:42.8px 42.8px ;
+            margin: auto;        }
+        #dl .dl1 .tu2{
+            width:78px ;
+            height: 18px;
+
+            text-align: center;
+            margin: auto;
+        }
+        #ms{
+            /*秒杀*/
+            width: 96%;
+            height: 150px;
+            border: solid 1px palevioletred;
+            margin: auto;
+        }
+        #ms1{
+            width: 100%;
+            height: 25px;
+            border: solid 1px purple;
+            display: flex;
+        }
+
+        #ms2{
+            width: 100%;
+            height: 125px;
+            border: solid 1px purple;
+            display: flex;
+            overflow: hidden;
+            /*超出部分隐藏*/
+        }
+        #ms1 .ms11{
+            width: 50%;
+            height: 25px;
+            border: solid 1px white;
+            display: flex;
+        }
+
+        #ms1 .ms22{
+            width: 23%;
+            height: 25px;
+            border: solid 1px white;
+            display: flex;
+
+        }
+        .ms111{
+            width: 27%;
+        }
+        #xr{
+            width: 96%;
+            height: 90px;
+            display:flex;
+            margin: auto;
+        }
+        #xr1{
+            width: 50%;
+            height: 90px;
+            background-image: url("https://m.360buyimg.com/mobilecms/s376x240_jfs/t1/49601/16/12206/115887/5d91b4d5E34709952/aba2bcb4855e6e52.png!q70.jpg.dpg");
+            background-size:197.38px 90px;
+        }
+        #xr2{
+            width: 50%;
+            height: 90px;
+            background-image: url("https://m.360buyimg.com/mobilecms/s376x240_jfs/t1/32449/33/15631/174497/5cc2d86bE0289110c/9c53e25651659d43.png!q70.jpg.dpg");
+            background-size:197.38px 90px;
+        }
+        #xrs{
+            width: 96%;
+            height: 50px;
+            background-image: url("https://m.360buyimg.com/mobilecms/s750x100_jfs/t1/111655/4/10853/142323/5ef22455Eb86abfc1/2bf122bb2e87d6e3.png.webp");
+            background-size: 100% 50px;
+            margin: auto;
+        }
+        /*三小格标语*/
+        #xg{
+            width: 96%;
+            height: 107px;
+            margin: auto;
+            display: flex;
+        }
+        /*三小格*/
+        #xg1{
+            width: 29%;
+            height: 89.5px;
+            background-image: url("https://m.360buyimg.com/mobilecms/s244x187_jfs/t1/121473/6/7556/36890/5f155c31E1b718972/3c649c96e0a58d0d.png!q70.jpg.dpg");
+            background-size:100% 90px ;
+            vertical-align: middle;
+        }
+        /*三小格*/
+        #xg2{
+            width: 31.5%;
+            height: 100px;
+            background-image: url("https://m.360buyimg.com/mobilecms/s244x187_jfs/t1/147030/3/3408/34643/5f1556aaEdd3bd63e/2e3eea656482adcc.png!q70.jpg.dpg");
+            background-size:100% 107px ;
+            vertical-align: middle;
+        }
+        /*三小格*/
+        #xg3{
+            width: 29%;
+            height: 89.5px;
+            background-image: url("https://m.360buyimg.com/mobilecms/s244x187_jfs/t1/121340/4/7805/35234/5f190459Ea6f0acbb/5016c03855cf4c3a.png!q70.jpg.dpg");
+            background-size:100% 90px ;
+
+        }
+        #nav{
+            /*导航栏*/
+            width: 400px;
+            height: 45px;
+            background-color: darkgray;
+            position: fixed;
+            bottom: 0;
+            display: flex;
+        }
+        #nav div{
+            width: 80px;
+            height:54px ;
+            border:solid 1px black;
+        }
+        /*四小格*/
+        #sxg{
+            width: 96%;
+            height: 108px;
+            margin: auto;
+            overflow: hidden;
+            display: flex;
+        }
+
+
+        /*东家小院标语*/
+        #n{
+            width: 100%;
+            height: 37.5px;
+            text-align: center;
+            color: orange;
+            font-size: 30px;
+            margin: auto;
+        }
+        /*每日逛标语*/
+        #mrg{
+            width: 100%;
+            height: 37.5px;
+            text-align: center;
+            color: orange;
+            font-size: 30px;
+            margin: auto;
+            position: relative;
+        }
+        /*东家小院*/
+        #n1{
+            width: 96%;
+            height: 258px;
+            margin: auto;
+
+        }
+        #s{
+            width: 100%;
+            height: 120px;
+            display: flex;
+
+        }
+        .n11{
+            width: 50%;
+            height: 120px;
+
+        }
+        .n12{
+            width: 50%;
+            height: 120px;
+        }
+        #x{
+            width: 100%;
+            height: 138px;
+            display: flex;
+        }
+        .n221{
+            width: 25%;
+            height: 138px;
+        }
+        .n222{
+            width: 25%;
+            height: 138px;
+        }
+        .n223{
+            width: 25%;
+            height: 138px;
+        }
+        .n224{
+            width: 25%;
+            height: 138px;
+        }
+
+        .n111{
+            width: 100%;
+            height: 69.67px;
+            display: flex;
+        }
+        /*每日逛*/
+        #mrgx{
+            width: 96%;
+            height: 258px;
+            margin: auto;
+            position: relative;
+        }
+        #mx4{
+            width: 100%;
+            height: 129px;
+            display: flex;
+        }
+        #mx5{
+            width: 100%;
+            height: 129px;
+            display: flex;
+        }
+        /*为你推荐*/
+        #w{
+            width: 96%;
+            height: 38.53px;
+            margin: auto;
+            text-align: center;
+        }
+        ul{
+            width: 96%;
+            height: 1735px;
+            list-style: none;
+            margin: auto;
+        }
+        ul li{
+            width: 50%;
+            height: 289px;
+            float: left;
+        }
+        ul li .sp{
+            overflow: hidden;
+            /*超出部分隐藏*/
+            display: -webkit-box;
+            /*成为一个盒子*/
+            -webkit-box-orient: vertical;
+            /*垂直对齐*/
+            -webkit-line-clamp:2;
+            /*在第几行隐藏*/
+        }
+
+
+    </style>
+
+</head>
+<body>
+
+<!--最上边的搜索框-->
+<div id="di">
+    <div class="d1"><span class="iconfont" style="font-size: 35px;">&#xe747;</span></div>
+    <div class="d2"></div>
+    <div class="d3">登录</div>
+</div>
+<!--图片区-->
+<div id="imgs">
+    <div class="img"><a href="https://m.360buyimg.com/mobilecms/s700x280_jfs/t1/77586/20/14263/103147/5dbbf2e6Ed322c53c/6c000a1a7169843f.jpg!cr_1125x445_0_171!q70.jpg.dpg"></a></div>
+    <div class="img"></div>
+    <div class="img"></div>
+</div>
+
+<!--京东超市  10个小框框-->
+<div id="dl">
+    <div class="dl1">
+        <div>
+            <div class="tu1"></div>
+            <div class="tu2">京东超市</div>
+        </div>
+        <div>
+            <div class="tu3"></div>
+            <div class="tu2">数码电器</div>
+        </div>
+        <div>
+            <div class="tu4"></div>
+            <div class="tu2">京东服饰</div>
+        </div>
+        <div>
+            <div class="tu5"></div>
+            <div class="tu2">京东生鲜</div>
+        </div>
+        <div>
+            <div class="tu6"></div>
+            <div class="tu2">京东到家</div>
+        </div>
+    </div>
+    <div class="dl1">
+        <div>
+            <div class="tu7"></div>
+            <div class="tu2">充值缴费</div>
+        </div>
+        <div>
+            <div class="tu8"></div>
+            <div class="tu2">9.9元拼</div>
+        </div>
+        <div>
+            <div class="tu9"></div>
+            <div class="tu2">领券</div>
+        </div>
+        <div>
+            <div class="tu10"></div>
+            <div class="tu2">领金贴</div>
+        </div>
+        <div>
+            <div class="tu11"></div>
+            <div class="tu2">PLUS会员</div>
+        </div>
+
+    </div>
+</div>
+
+
+<!--秒杀框-->
+<div id="ms">
+    <div id="ms1">
+        <div class="ms11">
+            <div style="width: 60px;height: 29px;font-size: 13px">京东秒杀</div>
+
+            <div style="width: 60px;height: 29px;font-size: 13px ">16点场</div>
+            <steong style="font-size: 13px">01：18：21</steong>
+        </div>
+        <div class="ms111"></div>
+        <div class="ms22">
+            <div>更多秒杀</div>
+            <div class="iconfont">&#xe743;</div>
+        </div>
+
+    </div>
+    <div id="ms2">
+        <div>
+            <img src="https://img13.360buyimg.com/n2/jfs/t1/76773/24/9193/422461/5d705a84E006d23dd/997f0bae0bf0c25d.jpg" alt="">
+            <span>18元</span>
+        </div>
+        <img src="https://img13.360buyimg.com/n2/jfs/t1/76773/24/9193/422461/5d705a84E006d23dd/997f0bae0bf0c25d.jpg" alt="">
+        <img src="https://img13.360buyimg.com/n2/jfs/t1/76773/24/9193/422461/5d705a84E006d23dd/997f0bae0bf0c25d.jpg" alt="">
+        <img src="https://img13.360buyimg.com/n2/jfs/t1/76773/24/9193/422461/5d705a84E006d23dd/997f0bae0bf0c25d.jpg" alt="">
+        <img src="https://img13.360buyimg.com/n2/jfs/t1/76773/24/9193/422461/5d705a84E006d23dd/997f0bae0bf0c25d.jpg" alt="">
+        <img src="https://img13.360buyimg.com/n2/jfs/t1/76773/24/9193/422461/5d705a84E006d23dd/997f0bae0bf0c25d.jpg" alt="">
+
+    </div>
+</div>
+<!--新人专享-->
+<div id="xr">
+    <div id="xr1"></div>
+    <div id="xr2"></div>
+</div>
+<!--省省卡-->
+<div id="xrs"></div>
+<!--三小格-->
+<div id="xg">
+    <div id="xg1"></div>
+    <div id="xg2"></div>
+    <div id="xg3"></div>
+</div>
+
+
+<!--四小格-->
+<div id="sxg">
+    <img style="height: 108px;width: 24%"  src="https://m.360buyimg.com/mobilecms/s152x168_jfs/t1/112310/39/12252/7913/5f0c45feE5a84aaab/fa7f2f1b996eb8b3.png.webp" alt="">
+    <img style="height: 108px;width: 24%" src="https://m.360buyimg.com/mobilecms/s152x168_jfs/t1/112310/39/12252/7913/5f0c45feE5a84aaab/fa7f2f1b996eb8b3.png.webp" alt="">
+    <img style="height: 108px;width: 24%" src="https://m.360buyimg.com/mobilecms/s152x168_jfs/t1/112310/39/12252/7913/5f0c45feE5a84aaab/fa7f2f1b996eb8b3.png.webp" alt="">
+    <img style="height: 108px;width: 24%" src="https://m.360buyimg.com/mobilecms/s152x168_jfs/t1/112310/39/12252/7913/5f0c45feE5a84aaab/fa7f2f1b996eb8b3.png.webp" alt="">
+    <img style="height: 108px;width: 24%" src="https://m.360buyimg.com/mobilecms/s152x168_jfs/t1/112310/39/12252/7913/5f0c45feE5a84aaab/fa7f2f1b996eb8b3.png.webp" alt="">
+
+</div>
+<!--东家小院-->
+<div id="n">
+    <span>东家小院</span>
+</div>
+<div id="n1">
+    <div id="s">
+        <div class="n11">
+            <div>
+                <span><b>科普好书</b></span><br>
+                <span>精选优秀科普好书</span>
+            </div>
+            <div class="n111">
+                <div>
+                    <img src="https://m.360buyimg.com/mobilecms/s150x150_jfs/t21961/244/1929604241/197378/cbd04418/5b3ec567N0bbcf59a.jpg!q70.jpg.dpg" style="width: 64.31px;height: 64.31px" alt="">
+                </div>
+                <div>
+                    <img src="https://m.360buyimg.com/mobilecms/s150x150_jfs/t1/135011/8/3162/189527/5ef82cedEa0d07e9f/dd406b38e4dc2d93.jpg!q70.jpg.dpg" style="width: 64.31px;height: 64.31px" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="n12">
+            <div>
+                <span><b>棉麻夏装</b></span><br>
+                <span>舒适透气夏季必备</span>
+            </div>
+            <div class="n111">
+                <div>
+                    <img src="https://m.360buyimg.com/mobilecms/s150x150_jfs/t1/110734/17/8484/134162/5eb66171E9e3d4a81/2cc3dafd51e61d8d.jpg!q70.jpg.dpg" style="width: 64.31px;height: 64.31px" alt="">
+                </div>
+                <div>
+                    <img src="https://m.360buyimg.com/mobilecms/s150x150_jfs/t1/116706/13/3211/271965/5ea656b4E15cb1b12/77044c9728b2a707.jpg!q70.jpg.dpg" style="width: 64.31px;height: 64.31px" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="x">
+        <div class="n221">
+            <div style="height: 20px">
+                <span style="font-size: 15px"><b>烹饪美食</b></span><br>
+            </div>
+            <div>
+                <img style="height: 120px;width: 100%" src="https://m.360buyimg.com/mobilecms/s150x150_jfs/t1/132091/31/5480/100201/5f1e813cE398c9930/948d7450f67a9e6d.jpg!q70.jpg.dpg" alt="">
+            </div>
+        </div>
+        <div class="n222">
+            <div style="height: 20px">
+                <span style="font-size: 15px"><b>亲子共读</b></span><br>
+            </div>
+            <div>
+                <img style="height: 120px;width: 100%" src="https://m.360buyimg.com/mobilecms/s150x150_jfs/t1/94480/37/6201/151182/5df1f3d7Edd0e17cb/2d9dcc2897cebcd1.jpg!q70.jpg.dpg" alt="">
+            </div>
+        </div>
+        <div class="n223">
+            <div style="height: 20px">
+                <span style="font-size: 15px"><b>无畏时光</b></span><br>
+            </div>
+            <div>
+                <img style="height: 120px;width: 100%" src="https://m.360buyimg.com/mobilecms/s150x150_jfs/t1/49842/40/3615/329289/5d15c0acE22a77881/47850f41ed2fbb82.jpg!q70.jpg.dpg" alt="">
+            </div>
+        </div>
+        <div class="n224">
+            <div style="height: 20px">
+                <span style="font-size: 15px"><b>实用时尚</b></span><br>
+            </div>
+            <div>
+                <img style="height: 120px;width: 100%" src="https://m.360buyimg.com/mobilecms/s150x150_jfs/t1/138687/12/3906/215255/5f1d3df3E18e75389/b013116b89b9c50f.jpg!q70.jpg.dpg" alt="">
+            </div>
+        </div>
+    </div>
+
+
+    <!--每日逛-->
+    <div id="mrg">
+        <span>每日逛</span>
+    </div>
+    <div id="mrgx">
+        <div id="mx4">
+            <div class="mx1" style="width: 25%;height: 100%">
+                <span style="font-size: 15px"><b>免息星球</b></span><br>
+                <span style="font-size: 15px">白条免息购</span>
+                <div><img style="width: 94px;height:89px" src="https://m.360buyimg.com/n1/s150x150_jfs/t29566/227/1464891645/10350/a5b133e2/5ce20cdcNd9cdd972.jpg!q70.jpg.dpg" alt=""></div>
+            </div>
+            <div class="mx1">
+                <span style="font-size: 15px"><b>每日特价</b></span><br>
+                <span style="font-size: 15px">9.9疯抢</span>
+                <div><img style="width: 94px;height:89px" src="https://m.360buyimg.com/mobilecms/s150x150_jfs/t1/89676/29/5758/20628/5def37a2Eff165a1c/b41fe7c9ac32f16f.jpg!q70.jpg.dpg" alt=""></div>
+            </div>
+            <div class="mx1">
+                <span style="font-size: 15px"><b>品牌闪购</b></span><br>
+                <span style="font-size: 15px">汇大牌好价</span>
+                <div><img style="width: 94px;height:89px" src="https://m.360buyimg.com/mobilecms/s150x150_jfs/t1/100430/19/5671/35161/5def3b36Eda0d4e24/cae78ce556a995c7.png!q70.jpg.dpg" alt=""></div>
+            </div>
+            <div class="mx1">
+                <span style="font-size: 15px"><b>京东直播</b></span><br>
+                <span style="font-size: 15px">好货即刻买</span>
+                <div><img style="width: 94px;height:89px" src="https://m.360buyimg.com/mobilecms/s150x150_jfs/t1/75300/31/13658/33045/5daeb773Ebbbd91bd/47a1bdf9047ed568.jpg!q70.jpg.dpg" alt=""></div>
+            </div>
+        </div>
+        <div id="mx5">
+            <div class="mx1">
+                <span style="font-size: 15px"><b>排行榜</b></span><br>
+                <span style="font-size: 15px">热销推荐</span>
+                <div><img style="width: 94px;height:89px" src="https://m.360buyimg.com/mobilecms/s150x150_jfs/t1/56939/39/1210/59272/5cefa52dE2f70588a/3174a20e743edd49.png!q70.jpg.dpg" alt=""></div>
+            </div>
+            <div class="mx1">
+                <span style="font-size: 15px"><b>拍拍好物</b></span><br>
+                <span style="font-size: 15px">五折起</span>
+                <div><img style="width: 94px;height:89px" src="https://m.360buyimg.com/mobilecms/s150x150_jfs/t1/34938/26/11155/70774/5cefa0c6E5a90edb2/47b686712510d44e.png!q70.jpg.dpg" alt=""></div>
+            </div>
+            <div class="mx1">
+                <span style="font-size: 15px"><b>新品首发</b></span><br>
+                <span style="font-size: 15px">京东小魔方</span>
+                <div><img style="width: 94px;height:89px" src="https://m.360buyimg.com/n1/s150x150_jfs/t1/116252/24/2308/43604/5ea1359fE61a06adb/6cef94529cd1cf09.png!q70.jpg.dpg" alt=""></div>
+            </div>
+            <div class="mx1">
+                <span style="font-size: 15px"><b>发现好货</b></span><br>
+                <span style="font-size: 15px">发现品质生活</span>
+                <div><img style="width: 94px;height:89px" src="https://m.360buyimg.com/mobilecms/s150x150_jfs/t1/38988/36/7707/54292/5cefa2b0E1cce5cfa/64e76ed6c67568bf.png!q70.jpg.dpg" alt=""></div>
+            </div>
+            <div style="height:258px;width: 96% "></div>
+        </div>
+
+
+    </div>
+
+
+    <div>
+        <div id="w"><span style="font-size: 30px;color: aqua;">为你推荐</span></div>
+        <div>
+            <ul>
+                <li>
+                    <img style="width:194px;height: 194px " src="https://m.360buyimg.com/mobilecms/s750x750_jfs/t1/133397/29/5387/229267/5f1c57a9E464b1946/ed32ac0dd10a48f8.jpg!q80.dpg.webp" alt="">
+                    <span class="sp">坤格（Kronsegler）德国进口手表 梵蒂冈天文台系列情侣手表男士手表防水自动机械表 黄盘金壳棕带 KS702A.WG</span>
+                    <div style="height:26px;width: 100% ">
+                        <span>￥2299</span>
+                        <button style="margin-left: 75px">看相似</button>
+                    </div>
+                    <div style="height: 26px;width: 50%"></div>
+                </li>
+                <li>
+                    <img style="width:194px;height: 194px " src="https://m.360buyimg.com/mobilecms/s750x750_jfs/t1/118162/19/13379/165954/5f1dae1aE7b6d7182/21652350c1d408b8.jpg!q80.dpg.webp" alt="">
+                    <span class="sp">正步（ZB）新国标电动车锂电池两轮踏板自行车成人代步电摩托外卖电瓶车 A9/30ah/银色/续航约120KM</span>
+                    <div style="height:26px;width: 100% ">
+                        <span>￥3669</span>
+                        <button style="margin-left: 75px">看相似</button>
+                    </div>
+                    <div style="height: 26px;width: 50%"></div>
+                </li>
+                <li>
+                    <img style="width:194px;height: 194px " src="https://img12.360buyimg.com/mobilecms/s372x372_jfs/t1/136388/34/5379/91167/5f1d8eaaE2a3394a6/1774d2834157be79.jpg!q70.dpg.webp" alt="">
+                    <span class="sp">(Dior)迪奥粉底液  凝脂恒久长效保湿粉底遮瑕010#象牙白20ml</span>
+                    <div style="height:26px;width: 100% ">
+                        <span>￥199</span>
+                        <button style="margin-left: 75px">看相似</button>
+                    </div>
+                    <div style="height: 26px;width: 50%"></div>
+                </li>
+                <li>
+                    <img style="width:194px;height: 194px " src="https://m.360buyimg.com/mobilecms/s750x750_jfs/t1/38856/1/2861/171185/5d0b0498E556d032d/be868c1934fd6c6b.jpg!q80.dpg.webp" alt="">
+                    <span class="sp">2020新款真皮女包时尚撞色头层牛皮子母包单肩斜挎手提包包女 灰色（现货秒发）</span>
+                    <div style="height:26px;width: 100% ">
+                        <span>￥349</span>
+                        <button style="margin-left: 75px">看相似</button>
+                    </div>
+                    <div style="height: 26px;width: 50%"></div>
+                </li>
+                <li>
+                    <img style="width:194px;height: 194px " src="https://img12.360buyimg.com/mobilecms/s372x372_jfs/t1/116641/32/13054/106097/5f193886Ed2b5fa86/481f98f17a6debf9.jpg!q70.dpg.webp" alt="">
+                    <span class="sp"> 三只松鼠什锦水果罐头 方便食品新鲜糖水黄桃椰果菠萝200g/罐 </span>
+                    <div style="height:26px;width: 100% ">
+                        <span>￥12.8</span>
+                        <button style="margin-left: 75px">看相似</button>
+                    </div>
+                    <div style="height: 26px;width: 50%"></div>
+                </li>
+                <li>
+                    <img style="width:194px;height: 194px " src="https://img20.360buyimg.com/mobilecms/s372x372_jfs/t1/113099/22/10641/149303/5ef19e8aE5de292e7/c5555c84eda99f15.jpg!q70.dpg.webp" alt="">
+                    <span class="sp">极度色彩指甲油胶套装光疗芭比美甲工具护甲孕妇儿童可用无味不可剥健康指彩 金色珠宝C006+C020</span>
+                    <div style="height:26px;width: 100% ">
+                        <span>￥58</span>
+                        <button style="margin-left: 100px">看相似</button>
+                    </div>
+                    <div style="height: 26px;width: 50%"></div>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+
+
+    <!--导航栏-->
+    <div id="nav">
+        <div>
+            <span class="iconfont">&#xe607;</span>
+            <span>首页</span>
+        </div>
+        <div>
+            <a href="分类.html"><p class="iconfont">&#xe6f0;</p>
+                <span>分类</span></a>
+        </div>
+        <div>
+            <span class="iconfont">&#xe6f1;</span>
+            <span>发现</span>
+        </div>
+        <div>
+            <a href="购物车.html"><p class="iconfont">&#xe6f0;</p>
+                <span>购物车</span></a>
+        </div>
+        <div>
+            <a href="登录.html"><p class="iconfont">&#xe6f0;</p>
+                <span>未登录</span></a>
+            <a href="京东.html"></a>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" href="css/iconfont.css" type="text/css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #d{
+            width: 100%;
+            height: 80px;
+            display: flex;
+        }
+        #d .d1{
+            width: 15%;
+            height: 55px;
+            text-align: center;
+        }
+        #d .d2{
+            width: 70%;
+            font-size: 20px;
+            top:20px;
+            text-align: center;
+            height: 40px;
+        }
+        #d .d3{
+            width: 10%;
+            height: 40px;
+            text-align: center;
+        }
+        #d .d4{
+            width: 10%;
+            height: 40px;
+            text-align: center;
+        }
+        #dd{
+            width: 100%;
+            height: 50px;
+            display: flex;
+        }
+        #dd .dd1{
+            width: 20%;
+            text-align: center;
+        }
+        #dd .dd2{
+            width: 20%;
+            text-align: center;
+        }
+        #dd .dd3{
+            width: 20%;
+            text-align: center;
+        }
+        #dd .dd4{
+            width: 20%;
+            text-align: center;
+        }
+        #dd .dd5{
+            width: 20%;
+            text-align: center;
+        }
+        #ddd{
+            background-color: gainsboro;
+        }
+        #ddd #dt{
+            width: 100%;
+            height: 50px;
+            display: flex;
+        }
+        #ddd #dt .dt1{
+            width: 15%;
+            text-align: left;
+        }
+        #ddd #dt .dt2{
+            width: 70%;
+            margin-left: 20px;
+        }
+        #ddd #dl{
+            width: 100%;
+            height: 100px;
+            background-color: bisque;
+            display: flex;
+        }
+        #ddd #dl .dl1{
+            width: 35%;
+            text-align: center;
+        }
+        #ddd #dl .dl2{
+            width: 65%;
+            top: 20px;
+            text-align: center;
+        }
+        #ddd #di{
+            width: 100%;
+            height: 50px;
+            display: flex;
+        }
+        #ddd #di .di1{
+            width: 60%;
+            text-align: right;
+        }
+        #ddd #di .di2{
+            width: 20%;
+            text-align:right;
+        }
+        #nav{
+            /*导航栏*/
+            width: 100%;
+            height: 45px;
+            background-color: darkgray;
+            position: fixed;
+            bottom: 0;
+            display: flex;
+        }
+        #nav div{
+            width: 80px;
+            height:54px ;
+            border:solid 1px black;
+            font-size: 17px;
+            text-align: center;
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+<div id="d">
+    <div class="d1"><span class="iconfont" style="font-size: 45px;">&#xe744;</span></div>
+    <div class="d2"><b>我的订单</b><span class="iconfont" style="font-size: 25px;">&#xe602;</span></div>
+    <div class="d3"><span class="iconfont" style="font-size: 35px;">&#xe634;</span></div>
+    <div class="d4"><span class="iconfont" style="font-size: 30px;">&#xe66f;</span></div>
+</div>
+<div id="dd">
+    <div class="dd1">全部</div>
+    <div class="dd2">待付款</div>
+    <div class="dd3">待收货</div>
+    <div class="dd4">已完成</div>
+    <div class="dd5">已取消</div>
+</div>
+<div id="ddd">
+    <div id="dt">
+        <div class="dt1"><span class="iconfont" style="font-size: 25px;margin-left: 15px">&#xe683;</span></div>
+        <div class="dt2">擎天家纺专营店<span class="iconfont" style="font-size: 25px;">&#xe743;</span></div>
+        <div class="dt3"><span class="iconfont" style="font-size: 25px;">&#xe61a;</span></div>
+    </div>
+    <div id="dl">
+        <div class="dl1"><img style="height:100px;width: 100px;line-height: 20px" src="https://img14.360buyimg.com/n1/jfs/t1/37091/27/989/280700/5cb567d5E87d5eeee/44c3ad088a8bfb8b.jpg"></div>
+        <div class="dl2">小包包 2020新款现货 韩版斜挎流苏单肩手提包 牛皮手提女包 复古棕大版</div>
+    </div>
+    <div id="di">
+        <div class="di1">共一件商品</div>
+        <div class="di2">实付款：</div>
+        <div><span class="iconfont" style=" width: 10%; font-size: 20px;margin-left:0px;color: red">&#xe713;</span></div>
+        <div style="font-size: 20px;color: red"><span>229</span>.00</div>
+    </div>
+    <div style="display: flex">
+        <button style="margin-left: 230px">快速评价</button>
+        <button style="margin-left: 10px">卖了换钱</button>
+        <button style="margin-left: 10px">再次购买</button>
+    </div>
+</div>
+<div id="ddd">
+    <div id="dt">
+        <div class="dt1"><span class="iconfont" style="font-size: 25px;margin-left: 15px">&#xe683;</span></div>
+        <div class="dt2">擎天家纺专营店<span class="iconfont" style="font-size: 25px;">&#xe743;</span></div>
+        <div class="dt3"><span class="iconfont" style="font-size: 25px;">&#xe61a;</span></div>
+    </div>
+    <div id="dl">
+        <div class="dl1"><img style="height:100px;width: 100px;line-height: 20px" src="https://img14.360buyimg.com/n1/jfs/t1/37091/27/989/280700/5cb567d5E87d5eeee/44c3ad088a8bfb8b.jpg"></div>
+        <div class="dl2">小包包 2020新款现货 韩版斜挎流苏单肩手提包 牛皮手提女包 复古棕大版</div>
+    </div>
+    <div id="di">
+        <div class="di1">共一件商品</div>
+        <div class="di2">实付款：</div>
+        <div><span class="iconfont" style=" width: 10%; font-size: 20px;margin-left:0px;color: red">&#xe713;</span></div>
+        <div style="font-size: 20px;color: red"><span>229</span>.00</div>
+    </div>
+    <div style="display: flex">
+        <button style="margin-left: 230px">快速评价</button>
+        <button style="margin-left: 10px">卖了换钱</button>
+        <button style="margin-left: 10px">再次购买</button>
+    </div>
+</div>
+<div id="ddd">
+    <div id="dt">
+        <div class="dt1"><span class="iconfont" style="font-size: 25px;margin-left: 15px">&#xe683;</span></div>
+        <div class="dt2">擎天家纺专营店<span class="iconfont" style="font-size: 25px;">&#xe743;</span></div>
+        <div class="dt3"><span class="iconfont" style="font-size: 25px;">&#xe61a;</span></div>
+    </div>
+    <div id="dl">
+        <div class="dl1"><img style="height:100px;width: 100px;line-height: 20px" src="https://img14.360buyimg.com/n1/jfs/t1/37091/27/989/280700/5cb567d5E87d5eeee/44c3ad088a8bfb8b.jpg"></div>
+        <div class="dl2">小包包 2020新款现货 韩版斜挎流苏单肩手提包 牛皮手提女包 复古棕大版</div>
+    </div>
+    <div id="di">
+        <div class="di1">共一件商品</div>
+        <div class="di2">实付款：</div>
+        <div><span class="iconfont" style=" width: 10%; font-size: 20px;margin-left:0px;color: red">&#xe713;</span></div>
+        <div style="font-size: 20px;color: red"><span>229</span>.00</div>
+    </div>
+    <div style="display: flex">
+        <button style="margin-left: 230px">快速评价</button>
+        <button style="margin-left: 10px">卖了换钱</button>
+        <button style="margin-left: 10px">再次购买</button>
+    </div>
+
+</div>
+<div id="nav">
+    <div>
+        <a href="京东.html"><p class="iconfont">&#xe6f0;</p>
+            <span>首页</span></a>
+    </div>
+    <div>
+        <a href="分类.html"><p class="iconfont">&#xe6f0;</p>
+            <span>分类</span></a>
+    </div>
+    <div>
+        <p class="iconfont">&#xe6f1;</p>
+        <span>发现</span>
+    </div>
+    <div>
+        <p class="iconfont">&#xe748;</p>
+        <span>购物车</span>
+    </div>
+    <div>
+
+        <a href="登录.html"><p class="iconfont">&#xe6f0;</p>
+            <span>未登录</span></a>
+    </div>
+
+</div>
+
+</body>
+</html>
